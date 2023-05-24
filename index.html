@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Bio🌸</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+    }
+
+    body {
+		font-family: 'Inter';
+		background-color: #0e0e0e;
+		color: #f0f0f0;
+		line-height: 1.7;
+		padding: 0 1rem;
+    }
+
+    .container {
+		max-width: 900px;
+		margin: 0 auto;
+		padding: 2rem 0;
+    }
+
+    h1 {
+		font-size: 2.75rem;
+		margin-bottom: 1rem;
+		text-align: center;
+		color: #00bcd4;
+    }
+
+    h2 {
+		margin-top: 2rem;
+		margin-bottom: 0.8rem;
+		font-size: 1.8rem;
+		color: #ff79c6;
+    }
+
+    ul {
+		list-style: disc;
+		padding-left: 1.5rem;
+    }
+
+    li {
+    	margin-bottom: 0.6rem;
+    }
+
+    .tech-stack {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 12px;
+		font-weight: 600;
+    }
+
+    .tech-stack span {
+		background: #222;
+		padding: 0.4em 0.8em;
+		border-radius: 8px;
+		color: #00bcd4;
+		font-size: 0.95rem;
+    }
+
+    @media (max-width: 600px) {
+    	h1 {
+    		font-size: 2rem;
+      	}
+
+    	h2 {
+        	font-size: 1.4rem;
+      	}
+
+      	.tech-stack {
+        	flex-direction: column;
+      	}
+    }
+  </style>
+</head>
+<body>
+	<div class="container">
+		<h1>Hey there, I'm Ayumi-chan!</h1>
+		<section>
+			<h2>About Me</h2>
+			<ul>
+				<li>I'm a 15-year-old teen, and i started to write some code when i was 12</li>
+				<li>I have a lot of dreams but i think i could pull them off before i get older.</li>
+			</ul>
+		</section>
+		<section>
+			<h2>My Tech Stacks</h2>
+			<div class="tech-stack">
+				<span>💻 Bash</span>
+				<span>🌐 Android | GNU/Linux | macOS | Windows</span>
+			</div>
+		</section>
+	</div>
+</body>
+</html>
