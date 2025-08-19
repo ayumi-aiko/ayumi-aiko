@@ -34,6 +34,6 @@
 
 <p align="center">
   <a href="https://github.com/anuraghazra/github-readme-stats">
-    <img src="https://github-readme-stats.vercel.app/api?username=ayumi-aiko&show_icons=true&theme=tokyonight" alt="Ayumi's GitHub stats">
+    <img src="https://github-readme-stats.vercel.app/api?username=ayumi-aiko&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true" alt="Ayumi's GitHub stats">
   </a>
 </p>
