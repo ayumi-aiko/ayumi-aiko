@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>My Projects</title>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: 'Inter', sans-serif;
+			background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+			background-size: 400% 400%;
+			animation: gradientBG 12s ease infinite;
+			color: #f0f0f0;
+			line-height: 1.7;
+			padding: 0 1rem;
+		}
+		@keyframes gradientBG {
+			0% {background-position: 0% 50%;}
+			50% {background-position: 100% 50%;}
+			100% {background-position: 0% 50%;}
+		}
+
+		header {
+			text-align: center;
+			padding: 2rem 1rem 1rem;
+		}
+		header h1 {
+			font-size: 2.5rem;
+			color: #00e5ff;
+			text-shadow: 0 0 15px #00e5ff80;
+			margin-bottom: 1rem;
+		}
+
+		.back-btn {
+			display: inline-block;
+			padding: 0.7rem 1.5rem;
+			background: #a7006f;
+			color: #fff;
+			text-decoration: none;
+			border-radius: 8px;
+			font-weight: 600;
+			transition: background 0.2s ease;
+		}
+		.back-btn:hover {
+			background: #d0008f;
+		}
+
+		.projects {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+			gap: 1.5rem;
+			padding: 2rem;
+			max-width: 1200px;
+			margin: 0 auto;
+		}
+
+		.project-card {
+			background: rgba(255, 255, 255, 0.05);
+			border: 1px solid rgba(255, 255, 255, 0.1);
+			backdrop-filter: blur(10px);
+			border-radius: 15px;
+			padding: 1.5rem;
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
+			box-shadow: 0 0 15px rgba(0, 188, 212, 0.2);
+		}
+		.project-card:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 0 25px rgba(0, 188, 212, 0.4);
+		}
+
+		.project-card h2 {
+			font-size: 1.5rem;
+			margin-bottom: 0.75rem;
+			color: #ff79c6;
+			text-shadow: 0 0 12px #ff79c650;
+		}
+
+		.project-card p {
+			font-size: 1rem;
+			color: #ccc;
+			margin-bottom: 1rem;
+		}
+
+		.project-card a {
+			display: inline-block;
+			padding: 0.6rem 1.2rem;
+			background: #a7006f;
+			color: #fff;
+			text-decoration: none;
+			border-radius: 8px;
+			font-weight: 600;
+			transition: background 0.2s ease;
+		}
+
+		.bottom-projects {
+			display: flex;
+			justify-content: center;
+			gap: 2rem;
+			flex-wrap: wrap;
+			padding-bottom: 2rem;
+		}
+
+		.bottom-projects .project-card {
+			width: 320px;
+			text-align: center;
+		}
+
+		@media (max-width: 600px) {
+			header h1 { font-size: 2rem; }
+			.project-card h2 { font-size: 1.3rem; }
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>My GitHub Projects</h1>
+		<a href="index.html" class="back-btn">Back to Bio</a>
+	</header>
+	<section class="projects">
+		<div class="project-card">
+			<h2>Tsukika</h2>
+			<p>Tsukika, a work-in-progress custom firmware solution for Samsung devices.</p>
+			<a href="https://github.com/ayumi-aiko/Tsukika" target="_blank">View on GitHub</a>
+		</div>
+		<div class="project-card">
+			<h2>Re-Malwack-Daemon</h2>
+			<p>A Daemon written in C<br>for Re-Malwack.</p>
+		</div>
+		<div class="project-card">
+			<h2>Bash-Installer</h2>
+			<p>Bash-Installer, a simple installer with multi-language support.</p>
+			<a href="https://github.com/ayumi-aiko/Bash-Installer" target="_blank">View on GitHub</a>
+		</div>
+	</section>
+	<section class="bottom-projects">
+		<div class="project-card">
+			<h2>XOR</h2>
+			<p>XOR, a simple command-line utility for encoding, decoding, and verifying strings and files using a custom 64-bit hash mechanism.</p>
+			<a href="https://github.com/ayumi-aiko/XOR" target="_blank">View on GitHub</a>
+		</div>
+        <div class="project-card">
+            <h2>Minari</h2>
+            <p>Minari, an open-source tool designed to help you create and manage custom wallpapers.</p>
+            <a href="https://github.com/ayumi-aiko/Minari" target="_blank">View on GitHub</a>
+        </div>
+	</section>
+</body>
+</html>
