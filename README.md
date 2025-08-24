@@ -7,8 +7,16 @@
 ---
 
 ## 🌸 About Me
-- I'm a 17-year-old teen, and I started to write some code when I was 12
-- I have a lot of dreams but I think I could pull them off before I get older.
+<p>
+  <img src="hutao.png" alt="Hu Tao" width="400" align="left" style="margin-right: 20px;" />
+  <br>
+  <b>•</b> 17-year-old coder (since age 12)<br>
+  <b>•</b> Love gaming and exploring new things<br>
+  <b>•</b> I love learning new stuff<br>
+  <b>•</b> Single by fate, waiting by faith (Isaiah 60:22)<br>
+</p>
+
+<br clear="left"/>
 
 ---
 
@@ -30,10 +38,14 @@
 
 ---
 
-## 🥰 My Stats
-
+## 👀 Profile View Counter
 <p align="center">
-  <a href="https://github.com/anuraghazra/github-readme-stats">
-    <img src="https://github-readme-stats.vercel.app/api?username=ayumi-aiko&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true" alt="Ayumi's GitHub stats">
-  </a>
+  <img src="https://moe-counter.glitch.me/get/@ayumi-aiko?theme=original-new" alt="view-counter"/>
+</p>
+
+---
+
+## 🥰 My Stats
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=ayumi-aiko&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true" alt="Ayumi's GitHub stats" />
 </p>
