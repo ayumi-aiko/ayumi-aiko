@@ -49,3 +49,6 @@
 <p align="center">
   <img src="https://github-readme-stats-denvercoder1.vercel.app/api?username=ayumi-aiko&show_icons=true&include_all_commits=true&count_private=true&theme=tokyonight" alt="Ayumi's GitHub stats" />
 </p>
+
+## 👋🏻 Join my discord server for more:
+- [Ayumi's Server](https://discord.gg/GRded35Ak4)
