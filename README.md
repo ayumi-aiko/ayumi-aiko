@@ -14,11 +14,11 @@
   <b>•</b> Love gaming and exploring new things<br>
   <b>•</b> I love learning new stuff<br>
   <b>•</b> Single by fate, waiting by faith (Isaiah 60:22)<br>
+  <br><br><br><br><br><br><br><br>
+  <a href="https://open.spotify.com/user/31yff4qe7m5vps7nfx3j7soi4lcu">
+    <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=31yff4qe7m5vps7nfx3j7soi4lcu&cover_image=true&theme=novatorem&show_offline=false&background_color=0d1117&interchange=false&bar_color=1db954&bar_color_cover=false" alt="Spotify Now Playing" />
+  </a>
 </p>
-
-<br clear="left"/>
-
----
 
 ## 🛠️ Tech Stacks
 - C
