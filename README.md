@@ -22,9 +22,9 @@
 
 ## 🛠️ Tech Stacks
 - C
+- C++ (i'm learning it)
 - Bash
 - Python
-- SQL
 - Kotlin
 
 ---
