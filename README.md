@@ -2,7 +2,7 @@
   <img src="https://raw.githubusercontent.com/Crystaltrd/Crystaltrd/refs/heads/main/teto-tetoris.gif" alt="tetoris" width="200">
 </p>
 
-<h1 align="center">Hey there, I'm Ayumi Aiko (愛子あゆみ)👋</h1>
+<h1 align="center">Hey there, Bocchi (ぼっち)👋</h1>
 
 ---
 
@@ -40,15 +40,15 @@
 
 ## 👀 Profile View Counter
 <p align="center">
-  <img src="https://moe-counter.glitch.me/get/@ayumi-aiko?theme=original-new" alt="view-counter"/>
+  <img src="https://moe-counter.glitch.me/get/@bocchi-the-dev?theme=original-new" alt="view-counter"/>
 </p>
 
 ---
 
 ## 🥰 My Stats
 <p align="center">
-  <img src="https://github-readme-stats-denvercoder1.vercel.app/api?username=ayumi-aiko&show_icons=true&include_all_commits=true&count_private=true&theme=tokyonight" alt="Ayumi's GitHub stats" />
+  <img src="https://github-readme-stats-denvercoder1.vercel.app/api?username=bocchi-the-dev&show_icons=true&include_all_commits=true&count_private=true&theme=tokyonight" alt="Bocchi's GitHub stats" />
 </p>
 
 ## 👋🏻 Join my discord server for more:
-- [Ayumi's Server](https://discord.gg/GRded35Ak4)
+- [Bocchi's Server](https://discord.gg/GRded35Ak4)
