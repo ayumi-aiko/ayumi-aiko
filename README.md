@@ -13,6 +13,7 @@
   <b>•</b> 17-year-old coder (since age 12)<br>
   <b>•</b> Love gaming and exploring new things<br>
   <b>•</b> I love learning new stuff<br>
+  <b>•</b> I'm chopped, with Audhd and introversion, blessings from the Lord.<br>
   <b>•</b> Single by fate, waiting by faith (Isaiah 60:22)<br>
   <br><br><br><br><br><br><br><br>
   <a href="https://open.spotify.com/user/31yff4qe7m5vps7nfx3j7soi4lcu">

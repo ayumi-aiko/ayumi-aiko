@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ts shi not tuff</title>
+    <title>Bocchi-desu ka!</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <style>
         * {
@@ -14,32 +14,35 @@
 
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #121212;
-            color: #e0e0e0;
+            background-color: #000;
+            color: #f3dbe0;
             line-height: 1.6;
             padding: 2rem;
+            overflow-x: hidden;
         }
 
         .container {
             max-width: 1200px;
             margin: 0 auto;
+            position: relative;
+            z-index: 10;
         }
 
         header {
             text-align: center;
             padding: 3rem 1rem 2rem;
         }
-        
+
         header h1 {
             font-size: 2.8rem;
-            color: #4caf50;
+            color: #ffb7c5;
             margin-bottom: 1rem;
         }
 
         .back-btn {
             display: inline-block;
             padding: 0.7rem 1.5rem;
-            background-color: #4caf50;
+            background-color: #ffb7c5;
             color: #121212;
             text-decoration: none;
             border-radius: 999px;
@@ -49,7 +52,7 @@
 
         .back-btn:hover {
             transform: scale(1.05);
-            background-color: #66bb6a;
+            background-color: #ffc9d7;
         }
 
         .projects-grid {
@@ -60,11 +63,12 @@
         }
 
         .project-card {
-            background-color: #1e1e1e;
+            background-color: rgba(42, 42, 42, 0.85);
             border-radius: 12px;
             padding: 2rem;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
         }
 
         .project-card:hover {
@@ -75,19 +79,19 @@
         .project-card h2 {
             font-size: 1.5rem;
             margin-bottom: 0.8rem;
-            color: #4caf50;
+            color: #ffb7c5;
         }
 
         .project-card p {
             font-size: 1rem;
-            color: #bdbdbd;
+            color: #e6cbd1;
             margin-bottom: 1.2rem;
         }
 
         .project-card a {
             display: inline-block;
             padding: 0.6rem 1.2rem;
-            background-color: #4caf50;
+            background-color: #ffb7c5;
             color: #121212;
             text-decoration: none;
             border-radius: 999px;
@@ -97,7 +101,7 @@
 
         .project-card a:hover {
             transform: scale(1.05);
-            background-color: #66bb6a;
+            background-color: #ffc9d7;
         }
 
         @media (max-width: 600px) {
@@ -112,8 +116,32 @@
         .footer {
             text-align: center;
             font-size: 0.8rem;
-            color: #616161;
+            color: #f5ccd5;
             margin-top: 1rem;
+            margin-bottom: 3rem;
+        }
+
+        .petal {
+            position: fixed;
+            top: -10px;
+            width: 20px;
+            height: 20px;
+            background: url('https://cdn-icons-png.flaticon.com/512/774/774832.png') no-repeat center/contain;
+            opacity: 0.8;
+            animation: fall linear infinite;
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        @keyframes fall {
+            0% {
+                transform: translateX(0) translateY(0) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateX(100px) translateY(110vh) rotate(360deg);
+                opacity: 0;
+            }
         }
     </style>
 </head>
@@ -163,7 +191,7 @@
             </div>
             <div class="project-card">
                 <h2>TerminalSierra</h2>
-                <p>A small kotlin written app for basic shell access.</p>
+                <p>A small Kotlin written app for basic shell access.</p>
                 <a href="https://github.com/bocchi-the-dev/TerminalSierra" target="_blank">View on GitHub</a>
             </div>
             <div class="project-card">
@@ -186,5 +214,19 @@
             <p>"When the time is right, I, the Lord, will make it happen." — Isaiah 60:22</p>
         </div>
     </div>
+    <script>
+        const numPetals = 35;
+        for(let i = 0; i < numPetals; i++) {
+            const petal = document.createElement('div');
+            petal.classList.add('petal');
+            petal.style.left = Math.random() * 100 + 'vw';
+            const size = 15 + Math.random() * 15;
+            petal.style.width = size + 'px';
+            petal.style.height = size + 'px';
+            petal.style.animationDuration = 5 + Math.random() * 5 + 's';
+            petal.style.top = -Math.random() * window.innerHeight + 'px';
+            document.body.appendChild(petal);
+        }
+    </script>
 </body>
 </html>

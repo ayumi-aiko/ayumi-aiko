@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>isbludeinstein</title>
+    <title>Moshi Moshi!</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <style>
         * {
@@ -14,25 +14,27 @@
 
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #121212;
+            background-color: #000;
             color: #e0e0e0;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
             padding: 2rem;
+            overflow: hidden;
         }
 
         .container {
             width: 100%;
             max-width: 900px;
-            background-color: #1e1e1e;
+            background-color: rgba(20, 20, 20, 0.95);
             border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 4px 20px rgba(255, 182, 193, 0.2);
             padding: 2.5rem;
             display: flex;
             flex-direction: column;
             gap: 2rem;
+            z-index: 10;
         }
 
         .header {
@@ -41,12 +43,12 @@
 
         .header h1 {
             font-size: 2.5rem;
-            color: #4caf50;
+            color: #ffb7c5;
         }
 
         .header p {
             font-size: 1rem;
-            color: #9e9e9e;
+            color: #f1d9df;
             margin-top: 0.5rem;
         }
 
@@ -57,7 +59,7 @@
         }
 
         .section {
-            background-color: #2a2a2a;
+            background-color: rgba(42, 42, 42, 0.85);
             border-radius: 8px;
             padding: 1.5rem;
             display: flex;
@@ -69,13 +71,13 @@
 
         .section h2 {
             font-size: 1.3rem;
-            color: #4caf50;
+            color: #ffb7c5;
             margin-bottom: 1rem;
         }
 
         .section p {
             font-size: 0.9rem;
-            color: #bdbdbd;
+            color: #e6cbd1;
             line-height: 1.6;
         }
 
@@ -102,7 +104,7 @@
         .projects-button {
             display: inline-block;
             padding: 0.75rem 2rem;
-            background-color: #4caf50;
+            background-color: #ffb7c5;
             color: #121212;
             text-decoration: none;
             font-weight: 600;
@@ -111,15 +113,37 @@
         }
 
         .projects-button:hover {
-            background-color: #66bb6a;
+            background-color: #ffc9d7;
             transform: translateY(-2px);
         }
 
         .footer {
             text-align: center;
             font-size: 0.8rem;
-            color: #616161;
+            color: #f5ccd5;
             margin-top: 0.5rem;
+        }
+
+        .petal {
+            position: fixed;
+            top: -10px;
+            width: 20px;
+            height: 20px;
+            background: url('https://cdn-icons-png.flaticon.com/512/774/774832.png?raw=true') no-repeat center/contain;
+            opacity: 0.8;
+            animation: fall linear infinite;
+            z-index: 1;
+        }
+
+        @keyframes fall {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(110vh) rotate(360deg);
+                opacity: 0;
+            }
         }
     </style>
 </head>
@@ -162,5 +186,20 @@
             <p>"When the time is right, I, the Lord, will make it happen." — Isaiah 60:22</p>
         </div>
     </div>
+    <script>
+        const numPetals = 35;
+        for(let i = 0; i < numPetals; i++) {
+            const petal = document.createElement('div');
+            petal.classList.add('petal');
+            petal.style.left = Math.random() * 100 + 'vw';
+            const size = 15 + Math.random() * 15;
+            petal.style.width = size + 'px';
+            petal.style.height = size + 'px';
+            petal.style.animationDuration = 5 + Math.random() * 5 + 's';
+            petal.style.animationDelay = '0s';
+            petal.style.top = -Math.random() * window.innerHeight + 'px';
+            document.body.appendChild(petal);
+        }
+    </script>
 </body>
 </html>
